@@ -6,7 +6,7 @@ function init() {
  }   
  const clockBlock = document.querySelector('#clock')
  const setTime = (getCurrentSeconds()/(60*60*24)*100).toFixed(3)
- clockBlock.innerHTML = setTime
+ clockBlock.innerHTML = setTime + '%'
 
 }
 setInterval(init,1000)
